@@ -1,0 +1,60 @@
+.widget {
+padding: 10px;
+height:375px;
+}
+
+	.widget a {
+	color: #3C2111;
+	text-decoration: none;
+	}
+	
+	.widget a:hover {
+	
+	text-decoration: underline;
+	}
+
+	.tabnav li {
+	display: inline;
+	list-style: none;
+	padding-right: 5px;
+	}
+	
+		.tabnav li a {
+	
+		text-transform: uppercase;
+		color: #222;
+		font-weight: bold;
+		padding: 4px 6px;
+		outline: none;
+		}
+		.tabnav li a:hover {
+		color: #60BDB8;
+		text-decoration:none;
+		}
+		
+		.tabnav li a:active, .tabnav li.ui-tabs-selected a {
+		color: #60BDB8;
+		text-decoration: none;
+		}
+
+.ui-tabs-hide {
+		display: none;
+		}
+
+		#featuredvid {
+		text-align: center;
+		}
+		
+			.fvid {
+			margin-bottom: 5px;
+			}
+		
+			.vidselector li {
+			text-align: left;
+			list-style: none;
+			padding: 5px;
+			background: #ffffff;
+			border: 1px solid #dedbd1;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			}

@@ -1,0 +1,319 @@
+/*
+ * MAIN COLORS
+ * BROWN: 3C2111
+ * GREEN: 60BDB8
+ * ORANGE: F2713C
+ * OFF WHITE: F0EADD
+ * background: FBF9F5/F0EADD/F4F0E8
+ * */
+
+.widget {
+	padding:70px;
+	box-shadow: inset 0px 0px 15px 0px #ABABAB;
+	-webkit-box-shadow: inset 0px 0px 15px 0px #ABABAB;
+	-moz-box-shadow: inset 0px 0px 15px 0px #ABABAB;
+	-o-box-shadow: inset 0px 0px 15px 0px #ABABAB;
+	
+}
+@media all and (min-width: 350px) {
+	div > .widget-section {
+		margin-bottom:30px;
+		width:350px;
+	}
+}
+@media all and (max-width: 349px) {
+	div > .widget-section {
+		margin-bottom:30px;
+		width:100%;
+	}
+}
+
+div.sub-accordion, .content {
+	text-align:center;
+	padding:15px;
+}
+div > h1 {
+	font-size:28px;
+	text-align:center;
+	padding:5px;
+}
+div > h1.bottom-border {
+	border-bottom:1px solid #3C2111;
+}
+
+div > h2.odd {
+	cursor:pointer;
+	font-size:20px;
+	padding:10px 0px 10px 5px;
+	border-bottom:1px solid #3C2111;
+	background: #F0EADD;
+}
+
+
+div > h2.even {
+	cursor:pointer;
+	font-size:20px;
+	padding:10px 0px 10px 5px;
+	border-bottom:1px solid #3C2111;
+	background: #DBD5CD;
+}
+div > h3 {
+	margin-left:30px;
+	cursor:pointer;
+	
+}
+/* add_inspector.php */
+.drop_shadow {
+	-webkit-box-shadow:  0px 3px 5px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow:  0px 3px 5px rgba(50, 50, 50, 0.15);
+	box-shadow:  0px 3px 5px rgba(50, 50, 50, 0.15);
+}
+
+.footer-drop-shadow {
+	-webkit-box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+	box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+}
+.container_add_insp {
+	width:50%;
+	margin:auto;
+}
+div > h2.add_insp {
+	font-size:20px;
+	padding:10px 0px 10px 5px;
+	border-bottom:1px solid #3C2111;
+	background: #F0EADD;
+	border-top:1px solid #3C2111;
+	color: #3C2111;
+}
+
+span.add_insp_button {
+	 display:inline-block;
+	 float:right;
+}
+span > input.add_insp_button {
+	margin:0px 5px 20px 0px;
+	padding:5px;
+	font-size:14px;
+	
+}
+span > input.add_insp_button:hover {
+	margin:0px 5px 0px 0px;padding:5px;font-size:14px;
+}
+.form-background {
+	background:#F0EADD;
+	padding:15px;
+}
+/* new_inspection.php > request form */
+@media all and (min-width: 350px) {
+  	input.new_request {
+		width:350px;
+	}
+	textarea.new_request {
+		width:350px;
+	}
+	select {
+		width:363px;
+		border:1px solid black;
+		height: 28px;
+	}
+	.address {
+		margin-left:180px;
+		font-weight:bold;
+	}
+	label.optional_reports {
+		margin-left:40px;
+		font-weight:bold;
+	}
+	.new_request_button {
+		margin-left:300px;
+	}
+}
+@media all and (max-width: 350px) {
+  	input.new_request {
+		width: 95%;
+	}
+	textarea.new_request {
+		width: 95%;
+	}
+	.new_request_button {
+		float:right;
+	}
+}
+
+/* inspector_list.php */
+
+.list_title {
+	color: #3C2111;
+	display:inline-block;
+	width:100%;
+	padding:5px;
+	border-bottom:1px solid #3C2111;
+}
+
+div > div > div > div.tester {
+	padding:5px;margin-left:35px;
+}
+
+div > div > div > div.tester > label.insp_info {
+	font-weight:bold; float:left; text-align:right; width:150px;
+}
+div > div > div > div.tester > a.insp_remove {
+	color: #F2713C ;
+	float:right;
+}
+div > div > div > div.tester > span > a.insp_move {
+	color: #60BDB8 ;
+}
+div > div > div > div.tester > span > a.insp_delete {
+	color: #F2713C ;
+}
+
+div > div > div > div.tester > span {
+	display:inline-block;
+	float:right;
+}
+.inspector_list {
+	clear:both;
+	margin-left:10px;
+	padding:10px;
+	border-bottom:1px solid #3C2111;
+	color: #3C2111;
+	background: #F0EADD; 
+}
+
+.bold {
+	font-weight:bold;
+}
+
+/* jQuery UI datepicker */
+.ui-datepicker .ui-datepicker-header {
+	color: #60BDB8;
+	background: #F0EADD;
+}
+.ui-datepicker {
+	color: #60BDB8;
+	width:350px;
+}
+select.error, input.error {
+	background: #FC968B;
+}
+#my-info-result {
+	margin: 10px 45px;
+}
+#my-account {
+	text-align: left;
+	}
+#my-account .tester {
+	margin-right: 30px;
+}
+#my-account form {
+	background-color: #F0EADD;
+	padding: 15px;
+	margin: 10px 35px 10px;
+	}
+#my-account form input[type="text"],
+#my-account form input[type="password"],
+#my-account form select {
+	width: 530px;
+	}
+#my-account form input.half,
+#my-account form select.half {
+	width: 254px;
+}
+#my-account form input.tiny,
+#my-account form select.tiny {
+	width: 100px;
+}
+
+/*MEDIA QUERIES FOR "my account" forms on dashboard*/
+@media all and (max-width: 350px) {
+	#my-info-result {
+	margin: 10px 45px;
+}
+#my-account {
+	text-align: left;
+	}
+#my-account .tester {
+	margin: 0px;
+	padding:0px;
+}
+#my-account form {
+	background-color: #F0EADD;
+	padding: 5px;
+	margin:0px 0px 20px 0px;
+	}
+#my-account form input[type="text"],
+#my-account form input[type="password"],
+#my-account form select {
+	width: 95%;
+	}
+
+#my-account form input.tiny,
+#my-account form select.tiny {
+	width: 95%;
+}
+#my-info {
+	width:95%;
+}
+#my-account {
+	width:100%;
+	margin:0;
+	padding:0;
+}
+}
+
+/*Biling-info*/
+#error-box {
+width: 430px;
+margin: 0 auto;
+background-color: #FBF9F5;
+border: 1px solid #f00;
+color: #f00;
+padding: 10px;
+margin-bottom: 15px;
+font-size: 13px;
+font-weight: bold;
+}
+#billing-info {
+font-size: 14px;
+}
+#billing-info input[type="text"],
+#billing-info select {
+	width: 430px;
+}
+#billing-info select {
+	margin: 3px;
+}
+#billing-info input[type="checkbox"] {
+	margin-right: 10px;	
+}
+#billing-info input.half,
+#billing-info select.half {
+	width: 203px;
+}
+#billing-info .checkbox-label {
+	font-size: 11px;
+	margin-bottom: 10px;
+}
+#billing-info fieldset {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 10px 0;
+}
+#billing-info fieldset legend {
+	padding: 0 10px;
+}
+#billing-info fieldset label {
+	font-size: 11px;
+	margin: 5px 0;
+}
+#billing-info #single_payment {
+	margin-bottom: 5px;
+}
+@media all and (max-width: 350px) {
+#billing-info input[type="text"],
+#billing-info select {
+	width: 95%;
+}
+}

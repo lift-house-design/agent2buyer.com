@@ -1,0 +1,446 @@
+/*
+ * M AIN COLORS
+ * BROWN: 3C2111
+ * GREEN: 60BDB8
+ * ORANGE: F2713C
+ * OFF WHITE: F0EADD
+ * background: FBF9F5/F0EADD/F4F0E8
+ * */
+
+#account {
+	margin:0;
+	-webkit-box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+	box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+
+	
+}
+
+#account > a {
+	text-decoration:none;
+	color: #3C2111;
+	position:absolute;
+	display:inline-block;
+	right:10px;
+	padding:10px;
+	font-size:20px;
+	
+}
+#account > a#home {
+	text-decoration:none;
+	color: #3C2111;
+	position:absolute;
+	left:10px;
+	padding:10px;
+	font-size:20px;
+	
+}
+
+/*MODAL SIGNIN START*/
+
+/* Mask for background, by default is not display */
+#mask {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+/* You can customize to your needs  */
+.login-popup{
+	display:none;
+	background: #F4F0E8;
+	padding: 3px 10px 10px 10px; 	
+	border: 2px solid #F2713C;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+    -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+	border-radius:12px 12px 12px 12px;
+    -moz-border-radius: 12px; /* Firefox */
+    -webkit-border-radius: 12px; /* Safari, Chrome */
+}
+
+/*Position the close button*/
+img.btn_close { 
+	float: right; 
+	margin: -53px -53px 0 0;
+}
+fieldset { 
+	border:none; 
+}
+
+form.signin .textbox label { 
+	display:block; 
+	padding-bottom:7px; 
+}
+
+form.signin .textbox span { 
+	display:block;
+}
+
+form.signin p, form.signin span { 
+	color:#3C2111; 
+	font-size:11px; 
+	line-height:18px;
+} 
+
+form.signin .textbox input { 
+	background:#F4F0E8; 
+	border-bottom:1px solid #3C2111;
+	border-left:1px solid #3C2111;
+	border-right:1px solid #3C2111;
+	border-top:1px solid #3C2111;
+	color:#3C2111; 
+    border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	font-size:13px;
+	padding:6px 6px 4px;
+	width:200px;
+}
+
+form.signin input:-moz-placeholder { 
+	color:#3C2111; 
+	}
+form.signin input::-webkit-input-placeholder { 
+	color:#3C2111;
+	}
+.button_holder {
+	margin-top:5px;
+}
+
+.button { 
+	background: #3C2111;
+	border-color:#fff; 
+	border-width:3px;
+    border-radius:12px 12px 12px 12px;
+	-moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+	color:#fff;
+	cursor:pointer;
+	display:inline-block;
+	font:12px; 
+	width:150px;
+	padding:5px;
+	margin:auto;
+	text-align:center;
+}
+
+.button:hover { 
+	background: #60BDB8;
+	border-color:#fff; 
+	border-width:3px;
+    border-radius:12px 12px 12px 12px;
+	-moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+	color:#fff;
+	cursor:pointer;
+	display:inline-block;
+	font:12px; 
+	width:150px;
+	padding:5px;
+	margin:5px;
+	margin:auto;
+	}
+.button2 { 
+	background: #B3262A;
+	border-color:#fff; 
+	border-width:3px;
+    border-radius:12px 12px 12px 12px;
+	-moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+	color:#fff;
+	cursor:pointer;
+	display:inline-block;
+	font:12px; 
+	width:150px;
+	padding:5px;
+	margin:auto;
+	text-align:center;
+}
+
+.button2:hover { 
+	background: #60BDB8;
+	border-color:#fff; 
+	border-width:3px;
+    border-radius:12px 12px 12px 12px;
+	-moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+	color:#fff;
+	cursor:pointer;
+	display:inline-block;
+	font:12px; 
+	width:150px;
+	padding:5px;
+	margin:5px;
+	margin:auto;
+	}
+.forgot {
+	color:#F2713C;	
+}
+.forgot:hover {
+	color:#ED1C24;	
+}
+
+
+/*MODAL SIGNIN END*/
+
+
+#account > a:hover {
+	color: #60BDB8;
+}
+
+#signup {
+	padding-bottom:5px;
+	font-size:40px;
+	text-align:center;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	color: #3C2111;
+	line-height:.7;
+
+}
+#signup > a {
+	padding-bottom:20px;
+	font-size:30px;
+	text-align:center;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	text-decoration:none;
+	color: #60BDB8;
+	line-height:1;
+
+}
+.faq_link{
+	padding-bottom:20px;
+	font-size:30px;
+	text-align:center;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	text-decoration:none;
+	color: #60BDB8;
+	line-height:1;
+}
+.faq_link:hover {
+	text-decoration:underline;
+}
+
+#signup #signup-link {
+	color: #3C2111;
+	cursor: pointer;
+	padding-bottom: 0;
+	z-index: 999;
+	text-decoration: underline;	
+}
+#signup #signup-link:hover {
+	
+}
+
+#pop-out-logo {
+	-webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.15);
+	box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.15);
+	height:260px;
+	background: #F4F0E8;
+	text-align:center;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size:35px;
+	color: #3C2111;
+}
+
+#videos {
+	padding-top:30px;
+}
+
+#signup_section {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size:20px;
+	-webkit-box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+	box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+	color: #3C2111;
+	/*background:rgba(96, 189, 184, .3);*/
+}
+
+#learn_link:hover {
+	text-decoration:underline;
+}
+
+#circle_section {
+	-webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.15);
+	box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.15);
+	background: #F4F0E8;
+}
+
+#learn_more_section {
+	-webkit-box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+	-moz-box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+	box-shadow: inset 0px -3px 5px rgba(50, 50, 50, 0.15);
+	padding:25px 0px 0px 0px; 
+	text-align:center;
+	
+}
+
+/* ACCORDIAN STYLE */
+
+.ui-accordion .ui-accordion-header {
+  cursor: pointer;
+  position: relative;
+  margin-top: 1px;
+  zoom: 1;
+  background:#FBF9F5;
+  border:1px solid #3C2111;
+  color: #3C2111;
+  font-family: 'Roboto', sans-serif;
+}
+.ui-accordion .ui-accordion-li-fix {
+  display: inline;
+}
+.ui-accordion .ui-accordion-header-active {
+  border-bottom: 0 !important;
+}
+.ui-accordion .ui-accordion-header a {
+  display: block;
+  font-size: 1em;
+  padding: .5em .5em .5em .7em;
+}
+/* IE7-/Win - Fix extra vertical space in lists */
+.ui-accordion a {
+  zoom: 1;
+}
+.ui-accordion-icons .ui-accordion-header a {
+  padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-icon {
+  position: absolute;
+  left: .5em;
+  top: 50%;
+  margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+  padding: 1em 2.2em;
+  margin-top: -2px;
+  position: relative;
+  top: 1px;
+  margin-bottom: 2px;
+  overflow: auto;
+  display: none;
+  zoom: 1;
+  background: #FBF9F5;
+  border:1px solid #3C2111 ;
+}
+.ui-accordion .ui-accordion-content-active {
+  display: block;
+}
+
+h2 {
+	font-size:20px;
+}
+
+form {
+	padding:0px;
+	margin:0px;
+}
+
+/* INPUT STYLES */
+input[type=text],  input[type=password], textarea {
+ 	background-color: #faf8f0;
+    border:solid 1px #3C2111;
+    color: #3C2111;
+    height: 28px;
+    padding-left:10px;
+	margin:3px;
+	}
+	
+input[type=submit] {
+ 	background-color: #faf8f0;
+	color: #3C2111;
+	border-radius:8px;
+	margin:3px;
+	padding:8px;
+	}
+	
+input[type=submit]:hover {
+ 	background-color: #60BDB8;
+	color: #fff;
+	border-radius:8px;
+	margin:3px;
+	padding:8px;
+	}
+	
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #3C2111;
+	font-size:14px;
+	line-height:.8;
+
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #3C2111;
+	font-size:14px;
+	line-height:.8;
+
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #3C2111;
+	font-size:14px;
+	line-height:2;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #000;
+	font-size:14px;
+	line-height:.8;
+
+}
+
+/*CSSSTICKYFOOTER.COM*/
+* {margin:0;padding:0;} 
+
+html, body {height: 100%; color :#382B25;  background: #F4F0E8; font-family: 'Roboto', sans-serif;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 150px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	color: #60BDB8;
+	background: #F4F0E8;
+	clear:both;
+	
+	} 
+	
+	
+#footer > div {
+	background: #F4F0E8;
+}
+#links > a {
+	color: #60BDB8;
+	text-decoration:none;
+	font-size:13px;
+	padding:5px;
+	display:inline-block;
+}
+
+#links > a:hover {
+	color: #60BDB8;
+	text-decoration:underline;
+}
+
+a.green {
+	color: #60BDB8;
+	text-decoration: none;
+}
+a.green:hover {
+	text-decoration: underline;
+}
+span.green {
+	color: #60BDB8;
+}
