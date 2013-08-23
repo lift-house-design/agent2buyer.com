@@ -1,7 +1,7 @@
 <?php
     /* local, dev, or live */
 	//$_GLOBALS['environment'] = 'local';
-	$_GLOBALS['environment'] = 'live';
+	$_GLOBALS['environment'] = 'dev';
 
 	if($_GLOBALS['environment'] == 'local'){
 		// local config
@@ -37,7 +37,6 @@
 			'site.automail_reply'=>'bain.lifthousedesign@gmail.com',
 			'site.domain'=>'http://dev.agent2buyer.com',
 			'twilio.number'=>'+15122702366',
-		);
 		);
 	}elseif($_GLOBALS['environment'] == 'live'){
 		// live config
