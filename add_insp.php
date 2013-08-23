@@ -259,7 +259,7 @@ Locizzle.com, Inc.';
 			
 			$client = new Services_Twilio($account_sid, $auth_token);
 			$message = $client->account->sms_messages->create(
-			  '+15128618405', // From a Twilio number in your account
+			  config('twilio.number'), // From a Twilio number in your account
 			  $insp_mobile_phone, // Text any number
 			  "You are invited to Locizzle.com by $first_name $last_name".(empty($company_name) ? '' : ' of '.$company_name).". To accept the invitation visit ".config('site.domain')."/accept_invitation.php?id=$insp_person_id"
 			);

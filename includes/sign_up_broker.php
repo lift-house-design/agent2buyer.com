@@ -133,7 +133,7 @@ if(!empty($_POST)){
 				
 				$client = new Services_Twilio($account_sid, $auth_token);
 				$message = $client->account->sms_messages->create(
-				  '+15128618405', // From a Twilio number in your account
+				  config('twilio.number'), // From a Twilio number in your account
 				  $mobile_phone, // Text any number
 				  "Hello $first_name, Your confirmation code is $verification_code."
 				);
@@ -246,7 +246,7 @@ Locizzle.com, Inc.';
 						
 						$client = new Services_Twilio($account_sid, $auth_token);
 						$message = $client->account->sms_messages->create(
-						  '+15128618405', // From a Twilio number in your account
+						  config('twilio.number'), // From a Twilio number in your account
 						  $mobile_phone, // Text any number
 						  "Hello $first_name, Your NEW confirmation code is $verification_code."
 						);

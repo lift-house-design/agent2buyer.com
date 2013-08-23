@@ -95,7 +95,7 @@ Locizzle.com, Inc.";
 		
 		$client = new Services_Twilio($account_sid, $auth_token);
 		$message = $client->account->sms_messages->create(
-		  '+15128618405', // From a Twilio number in your account
+		  config('twilio.number'), // From a Twilio number in your account
 		  $insp_mobile_phone, // Text any number
 		  "Your inspection quote has been accepted! Visit (".config('site.domain')."/billing-info.php?id=$bid_id)"
 		);
@@ -150,7 +150,7 @@ Locizzle.com, Inc.";
 			
 			$client = new Services_Twilio($account_sid, $auth_token);
 			$message = $client->account->sms_messages->create(
-			  '+15128618405', // From a Twilio number in your account
+			  config('twilio.number'), // From a Twilio number in your account
 			  $insp_mobile_phone, // Text any number
 			  "Unfortunately, your inspection quote has not been accepted for ".$street." ".$city.", ".$state.", ".$zip.". Keep a look out for your next opportunity from Locizzle.com!"
 			);

@@ -113,7 +113,7 @@ Locizzle.com, Inc.';
 				
 				$client = new Services_Twilio($account_sid, $auth_token);
 				$message = $client->account->sms_messages->create(
-				  '+15128618405', // From a Twilio number in your account
+				  config('twilio.number'), // From a Twilio number in your account
 				  $broker_mobile_phone, // Text any number
 				  $smsBody
 				);
@@ -163,7 +163,7 @@ Locizzle.com, Inc.';
 					
 					$client = new Services_Twilio($account_sid, $auth_token);
 					$message = $client->account->sms_messages->create(
-					  '+15128618405', // From a Twilio number in your account
+					  config('twilio.number'), // From a Twilio number in your account
 					  $client_mobile_phone, // Text any number
 					  $smsBody
 					);

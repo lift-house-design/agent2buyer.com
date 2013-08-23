@@ -20,7 +20,7 @@
 //			'paypalapi.user'=>'mike_api1.mvbeattie.com',
 //			'paypalapi.pass'=>'AWNLPFJ94XLH2PGT',
 //			'paypalapi.signature'=>'Akqw7M.hxQFSuBIVoKbQVW35wKlKAgUBfkbBvPP5td.0WQtU0hEmemrh',
-			'twilio.number'=>'+15128618405',
+			'twilio.number'=>'+15122702366',
 		);
 	}elseif($_GLOBALS['environment'] == 'dev'){
 		// development config
@@ -36,7 +36,7 @@
 			'site.contact_email'=>'Locizzle@locizzle.com',
 			'site.automail_reply'=>'support@locizzle.com',
 			'site.domain'=>'http://www.locizzle.com',
-			'twilio.number'=>'+15128618405',
+			'twilio.number'=>'+15122702366',
 		);
 	}elseif($_GLOBALS['environment'] == 'live'){
 		// live config
@@ -52,6 +52,7 @@
 			'site.contact_email'=>'mike.lifthousedesign@gmail.com',
 			'site.automail_reply'=>'support@agent2buyer.com',
 			'site.domain'=>'http://agent2buyer.com',
+			'twilio.number'=>'+15122702366',
 		);
 	}
 ?>

@@ -17,7 +17,7 @@ You also have a new inspection oppurtunity at Address: 12118 Walnut Park Xing, A
 	exit;
 	
 	$client->account->sms_messages->create(
-		'+15128618405', // From a Twilio number in your account
+		config('twilio.number'), // From a Twilio number in your account
 		'3048716066', // Text any number
 		$body
 	);
