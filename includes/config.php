@@ -1,7 +1,7 @@
 <?php
     /* local, dev, or live */
 	//$_GLOBALS['environment'] = 'local';
-	$_GLOBALS['environment'] = 'dev';
+	$_GLOBALS['environment'] = 'live';
 
 	if($_GLOBALS['environment'] == 'local'){
 		// local config
