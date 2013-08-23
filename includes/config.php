@@ -1,7 +1,7 @@
 <?php
     /* local, dev, or live */
 	//$_GLOBALS['environment'] = 'local';
-	$_GLOBALS['environment'] = 'live';
+	$_GLOBALS['environment'] = 'dev';
 
 	if($_GLOBALS['environment'] == 'local'){
 		// local config
@@ -26,17 +26,18 @@
 		// development config
 		return array(
 			// Database connection info
-			'mysql.host'=>'',
-			'mysql.user'=>'',
-			'mysql.pass'=>'',
-			'mysql.dbname'=>'',
+			'mysql.host'=>'localhost',
+			'mysql.user'=>'thomas_agent2buy',
+			'mysql.pass'=>'88oU~v@a~.W-',
+			'mysql.dbname'=>'thomas_agent2buyer',
 			// If dev mode is true, mysql errors, etc will be displayed
 			'site.dev_mode'=>false,
 			// General contact e-mail address
-			'site.contact_email'=>'Locizzle@locizzle.com',
-			'site.automail_reply'=>'support@locizzle.com',
-			'site.domain'=>'http://www.locizzle.com',
+			'site.contact_email'=>'bain.lifthousedesign@gmail.com',
+			'site.automail_reply'=>'bain.lifthousedesign@gmail.com',
+			'site.domain'=>'http://dev.agent2buyer.com',
 			'twilio.number'=>'+15122702366',
+		);
 		);
 	}elseif($_GLOBALS['environment'] == 'live'){
 		// live config
